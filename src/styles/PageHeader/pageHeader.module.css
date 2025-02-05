@@ -1,0 +1,128 @@
+.homePageHeader {
+  position: relative; /* Establish stacking context */
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 0; /* Ensure the container is at the base level */
+}
+
+.homePageHeader::before {
+      content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(53, 36, 66, 0.5) 0%,
+    rgba(53, 36, 66, 0.3) 50%,
+    rgba(53, 36, 66, 0) 100%
+  );
+  pointer-events: none;
+}
+
+
+.textContainer {
+  max-width: 700px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  transform: translateY(-50%);
+  
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px; /* Soft corners */
+ 
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  /* margin-bottom: 0.8rem; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Cinzel", serif;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Cinzel", serif;
+  margin-top: 2px;
+}
+
+
+@media (max-width: 768px) {
+  .textContainer {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    top: 60%;
+  }
+  
+
+  .buttonContainer {
+    margin-top: 20px;
+    align-items: center;
+    margin-right: 20px;
+    
+  }
+
+  .buttonContainer button {
+  cursor: default;
+
+}
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .homePageHeader::before {
+    width: 100%;
+    height: 70%;
+    top: auto;
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+       rgba(53, 36, 66, 0.5) 0%,
+    rgba(53, 36, 66, 0.3) 50%,
+    rgba(53, 36, 66, 0) 100%
+    );
+  }
+}
+
+@media (max-width: 1168px) {
+  .textContainer {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    top: 60%;
+  } 
+
+.homePageHeader::before {
+    width: 100%;
+    height: 70%;
+    top: auto;
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+       rgba(53, 36, 66, 0.5) 0%,
+    rgba(53, 36, 66, 0.3) 50%,
+    rgba(53, 36, 66, 0) 100%
+    );
+  }
+}
+

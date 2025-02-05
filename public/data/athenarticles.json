@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Explore the Majestic Acropolis of Athens",
+    "description": "Discover the ancient ruins of the Acropolis, home to iconic landmarks like the Parthenon. Experience the rich history and stunning views of Athens from this timeless hilltop site.",
+    "image": "/assets/images/acropolis.jpg",
+    "link": "/articles/alps"
+  },
+  {
+    "id": 2,
+    "title": "Unveiling the Wonders of the Athenian Museum",
+    "description": "Step inside the Athenian Museum to explore ancient Greek artifacts, sculptures, and masterpieces. A must-visit for those fascinated by Greece’s rich cultural heritage.",
+    "image": "/assets/images/athenmuseum.jpg",
+    "link": "/articles/thailand"
+  },
+  {
+    "id": 3,
+    "title": "The Temple of Poseidon at Cape Sounion",
+    "description": "Visit the Temple of Poseidon at Cape Sounion, offering stunning views of the Aegean Sea. Learn about its ancient significance and rich mythology in Greek culture.",
+    "image": "/assets/images/templeofposeidon.jpg",
+    "link": "/articles/kenya"
+  }
+]
