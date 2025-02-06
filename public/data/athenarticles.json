@@ -4,7 +4,7 @@
     "title": "Explore the Majestic Acropolis of Athens",
     "description": "Discover the ancient ruins of the Acropolis, home to iconic landmarks like the Parthenon. Experience the rich history and stunning views of Athens from this timeless hilltop site.",
     "image": "/assets/images/acropolis.jpg",
-    "link": "/articles/alps"
+    "link": "./acropolisArticle"
   },
   {
     "id": 2,

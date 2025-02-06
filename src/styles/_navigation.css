@@ -3,9 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1f0505;
+  background-color: #1e1a1a;
   /* border-bottom: 1px solid #e0e0e0; */
   color: #000000;
+  font-size: 16px;
 }
 
 .burger-menu {
@@ -43,7 +44,7 @@
   top: 0px;
   left: 0;
   width: 100%;
-  background-color: #1f0505;
+  background-color: #1e1a1a;
   padding: 0;
   margin: 0;
   font-weight: 500;
@@ -140,9 +141,9 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 175%;
+  top: 165%;
   left: 0;
-  background-color: #1f0505;
+  background-color: #1e1a1a;
   list-style: none;
   padding: 10px 0;
   min-width: 150px;
@@ -151,40 +152,34 @@
   color: white;
   text-align: left; /* Ensure text is left-aligned */
   border-top: solid 1px #ffe6b1;
-  
-  
 }
 
-
-
 .dropdown-toggle {
-/*  padding-top: 40px;  */
- padding-bottom: 40px; 
- color: #ffffff;
- cursor: pointer;
- font-weight: 500;
+  /*  padding-top: 40px;  */
+  padding-bottom: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .dropdown-toggle:hover {
   color: #ffe6b1;
-  
 }
 .dropdown-toggle-greece {
- /* padding-top: 40px;  */
- padding-bottom: 40px; 
- cursor: pointer;
- font-weight: 500;
+  /* padding-top: 40px;  */
+  padding-bottom: 40px;
+  cursor: pointer;
+  font-weight: 500;
 }
 .dropdown-toggle-greece:hover {
- /* padding-top: 40px;  */
-color: #ffe6b1;
+  /* padding-top: 40px;  */
+  color: #ffe6b1;
 }
 
 .dropdown-menu li {
   padding: 10px 15px; /* Add some padding for spacing */
   text-align: left; /* Align text inside the list item */
   white-space: nowrap; /* Prevent text from wrapping */
-  
 }
 
 .dropdown-menu li a {
@@ -192,7 +187,6 @@ color: #ffe6b1;
   color: white;
   text-decoration: none;
   width: 100%; /* Ensure full width is clickable */
-  
 }
 
 /* Show dropdown on hover */
@@ -211,13 +205,11 @@ color: #ffe6b1;
   position: absolute;
   left: calc(100%); /* Moves it slightly right */
   top: -5px; /* Moves it up slightly for a seamless transition */
-  background-color: #1f0505;
+  background-color: #1e1a1a;
   min-width: 150px;
   border-radius: 3px;
   text-align: left;
   padding: 5px 0;
- 
-  
 }
 
 /* Ensure the submenu remains visible when hovered */
@@ -225,6 +217,3 @@ color: #ffe6b1;
 .hover-dropdown .sub-menu:hover {
   display: block;
 }
-
-
-

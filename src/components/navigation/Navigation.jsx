@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io"; // ✅ Imported new arrow icon
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navigation = () => {
       <a href="/">
         <img
           className="logo1"
-          src="../src/assets/logo/placeholdeLogo.png"
+          src="/assets/logo/placeholdeLogo.png" // ✅ Fixed the image path
           alt="logo"
         />
       </a>
@@ -28,7 +29,11 @@ const Navigation = () => {
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         {/* Destinations Dropdown (Opens on Hover) */}
         <li className="dropdown">
-          <span className="dropdown-toggle">Destinations ▼</span>
+          <span className="dropdown-toggle">
+            Destinations{" "}
+            <IoIosArrowDown size={14} style={{ verticalAlign: "middle" }} />{" "}
+            {/* ✅ New arrow */}
+          </span>
           <ul className="dropdown-menu">
             <li>
               <NavLink to="/paris">Paris</NavLink>
@@ -39,10 +44,15 @@ const Navigation = () => {
             <li>
               <NavLink to="/tokyo">Tokyo</NavLink>
             </li>
+
             {/* Greece Dropdown (Opens on Hover) */}
             <li className="dropdown hover-dropdown">
-              <span className="dropdown-toggle-greece">Greece ▼</span>
-              <ul className="dropdown-menu sub-menu">
+              <span className="dropdown-toggle-greece">
+                <NavLink to="/greece">Greece</NavLink>{" "}
+              {/*   <IoIosArrowDown size={14} style={{ verticalAlign: "middle" }} />{" "} */}
+                {/* ✅ New arrow */}
+              </span>
+              {/* <ul className="dropdown-menu sub-menu">
                 <li>
                   <NavLink to="/athens">Athens</NavLink>
                 </li>
@@ -52,7 +62,7 @@ const Navigation = () => {
                 <li>
                   <NavLink to="/mykonos">Mykonos</NavLink>
                 </li>
-              </ul>
+              </ul> */}
             </li>
           </ul>
         </li>
@@ -67,20 +77,22 @@ const Navigation = () => {
           <NavLink to="/">Contact</NavLink>
         </li>
 
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook className="socialIcon" />
-        </a>
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram className="socialIcon" />
-        </a>
+        <div className="socialIconContainer">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="socialIcon" />
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="socialIcon" />
+          </a>
+        </div>
       </ul>
     </nav>
   );

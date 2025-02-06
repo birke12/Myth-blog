@@ -1,6 +1,6 @@
 import styles from "./Introduction.module.css";
 
-const Introduction = ( { articleText } ) => {
+const Introduction = () => {
   return (
     <article className={styles.introductionContainer}>
       <div className={styles.innerContainer}>
