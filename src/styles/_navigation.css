@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1e1a1a;
+  background-color: #292424;
   /* border-bottom: 1px solid #e0e0e0; */
   color: #000000;
   font-size: 16px;
@@ -35,6 +35,10 @@
   padding-left: 10px;
 }
 
+.socialIconContainer {
+  margin: 0 auto;
+}
+
 .nav-links {
   list-style: none;
   display: none;
@@ -44,10 +48,11 @@
   top: 0px;
   left: 0;
   width: 100%;
-  background-color: #1e1a1a;
+  background-color: #292424;
   padding: 0;
   margin: 0;
   font-weight: 500;
+  font-size: 16px;
 
   &.open {
     display: flex;
@@ -64,6 +69,8 @@
       display: block;
       position: relative;
       transition: color 0.3s;
+      font-size: 16px;
+      font-weight: 500;
 
       &:hover {
         color: #ffe8ba;
@@ -143,7 +150,7 @@
   position: absolute;
   top: 165%;
   left: 0;
-  background-color: #1e1a1a;
+  background-color: #292424;
   list-style: none;
   padding: 10px 0;
   min-width: 150px;
@@ -205,7 +212,7 @@
   position: absolute;
   left: calc(100%); /* Moves it slightly right */
   top: -5px; /* Moves it up slightly for a seamless transition */
-  background-color: #1e1a1a;
+  background-color: #292424;
   min-width: 150px;
   border-radius: 3px;
   text-align: left;
@@ -217,3 +224,26 @@
 .hover-dropdown .sub-menu:hover {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .dropdown-menu {
+    display: none; /* Keep it hidden by default */
+    position: static; /* Remove absolute positioning */
+    background-color: #292424;
+    width: 100%; /* Full width */
+    text-align: left;
+    border-bottom: solid 1px #ffe6b1;
+  }
+
+  .dropdown.open > .dropdown-menu {
+    display: block; /* Show when open class is added */
+  }
+
+  .dropdown-menu li {
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+
+

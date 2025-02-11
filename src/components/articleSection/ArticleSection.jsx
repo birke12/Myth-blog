@@ -4,6 +4,7 @@ import styles from "./articleSection.module.css";
 
 const ArticleSection = ({ jsonPath }) => {
   const [articles, setArticles] = useState([]);
+  
 
   useEffect(() => {
     fetch(jsonPath) // Load JSON dynamically based on prop

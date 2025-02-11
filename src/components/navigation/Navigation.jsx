@@ -3,13 +3,18 @@ import { NavLink } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io"; // ✅ Imported new arrow icon
+import { IoIosArrowDown } from "react-icons/io";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
@@ -17,7 +22,7 @@ const Navigation = () => {
       <a href="/">
         <img
           className="logo1"
-          src="/assets/logo/placeholdeLogo.png" // ✅ Fixed the image path
+          src="/assets/logo/placeholdeLogo.png"
           alt="logo"
         />
       </a>
@@ -27,12 +32,10 @@ const Navigation = () => {
       </div>
 
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
-        {/* Destinations Dropdown (Opens on Hover) */}
-        <li className="dropdown">
-          <span className="dropdown-toggle">
+        <li className={`dropdown ${isDropdownOpen ? "open" : ""}`}>
+          <span className="dropdown-toggle" onClick={toggleDropdown}>
             Destinations{" "}
-            <IoIosArrowDown size={14} style={{ verticalAlign: "middle" }} />{" "}
-            {/* ✅ New arrow */}
+            <IoIosArrowDown size={14} style={{ verticalAlign: "middle" }} />
           </span>
           <ul className="dropdown-menu">
             <li>
@@ -43,26 +46,6 @@ const Navigation = () => {
             </li>
             <li>
               <NavLink to="/tokyo">Tokyo</NavLink>
-            </li>
-
-            {/* Greece Dropdown (Opens on Hover) */}
-            <li className="dropdown hover-dropdown">
-              <span className="dropdown-toggle-greece">
-                <NavLink to="/greece">Greece</NavLink>{" "}
-              {/*   <IoIosArrowDown size={14} style={{ verticalAlign: "middle" }} />{" "} */}
-                {/* ✅ New arrow */}
-              </span>
-              {/* <ul className="dropdown-menu sub-menu">
-                <li>
-                  <NavLink to="/athens">Athens</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/santorini">Santorini</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/mykonos">Mykonos</NavLink>
-                </li>
-              </ul> */}
             </li>
           </ul>
         </li>

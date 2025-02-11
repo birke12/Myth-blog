@@ -1,6 +1,8 @@
 import styles from "./arcropolisArticle.module.css";
 
-const Acropolis = ({ articleHeader, articleText, articleImg, articleAlt }) => {
+const Acropolis = () => {
+
+  
   return (
     <article className={styles.introductionContainer}>
       <div className={styles.innerContainer}>

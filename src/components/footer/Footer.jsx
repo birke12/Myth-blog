@@ -20,11 +20,11 @@ const Footer = () => {
           connect with the stories of those who came before us, to stand in the
           places where history was made and legends were born.
         </p>
-        <p className={styles.sectionText}>
+        {/* <p className={styles.sectionText}>
           Every stone, every monument, and every artifact holds a story, and it
           is our privilege to guide you through the world’s most awe-inspiring
           ancient sites, bringing their mysteries and myths to life.
-        </p>
+        </p> */}
       </div>
 
       {/* Section 2: Copyright & Legal */}

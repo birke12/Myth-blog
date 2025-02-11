@@ -1,6 +1,7 @@
 import headerImg from "../assets/Background-greek-myth.png";
 import ArticleSection from "../components/articleSection/ArticleSection";
 import Introduction from "../components/introduction/Introduction";
+import Newsletter from "../components/newsletter/Newsletter";
 import PageHeader from "../styles/PageHeader/PageHeader";
 
 
@@ -31,6 +32,9 @@ const Home = () => {
           text="In the midst of chaos, there is also opportunity."
           author="Sun Tzu"
         />
+      </div>
+      <div>
+        <Newsletter />
       </div>
     </article>
   );
