@@ -39,13 +39,13 @@ const Navigation = () => {
           </span>
           <ul className="dropdown-menu">
             <li>
-              <NavLink to="/paris">Paris</NavLink>
+              <NavLink to="/egypt">Egypt</NavLink>
             </li>
             <li>
-              <NavLink to="/new-york">New York</NavLink>
+              <NavLink to="/scandinavia">Scandinavia</NavLink>
             </li>
             <li>
-              <NavLink to="/tokyo">Tokyo</NavLink>
+              <NavLink to="/greece">Greece</NavLink>
             </li>
           </ul>
         </li>
@@ -54,7 +54,7 @@ const Navigation = () => {
           <NavLink to="/">Travel Tips</NavLink>
         </li>
         <li>
-          <NavLink to="/">About Us</NavLink>
+          <NavLink to="/aboutUs">About Us</NavLink>
         </li>
         <li>
           <NavLink to="/">Contact</NavLink>

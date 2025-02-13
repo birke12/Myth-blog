@@ -1,8 +1,8 @@
-import headerImg from "../assets/Background-greek-myth.png";
+/* import headerImg from "../assets/Background-greek-myth.png"; */
 import ArticleSection from "../components/articleSection/ArticleSection";
 import Introduction from "../components/introduction/Introduction";
 import Newsletter from "../components/newsletter/Newsletter";
-import PageHeader from "../styles/PageHeader/PageHeader";
+import PageHeader from "../components/PageHeader/PageHeader";
 
 
 
@@ -12,10 +12,10 @@ import PageHeader from "../styles/PageHeader/PageHeader";
 const Home = () => {
   return (
     <article>
-      <PageHeader
+      <PageHeader headerType="home"
         title="Ancient Journeys"
-        subTitle="placeholder"
-        headerImg={headerImg}
+        subTitle="The Mythical Travel Blog"
+        /* headerImg={headerImg} */
       />
       <div>
         <Introduction />

@@ -1,7 +1,10 @@
 body {
   font-size: 18px;
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
+  font-family: "Cormorant Garamond", serif;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .mostViewedArticle {
@@ -9,6 +12,8 @@ body {
   margin-top: 40px;
   align-items: center;
 }
+
+
 
 .titleWithLines {
   display: flex;
@@ -19,7 +24,7 @@ body {
 
 .line {
   flex-grow: 1;
-  height: 1.2px;
+  height: 0.7px;
   background-color: #c5c5c5;
   margin: 0 50px; /* Adds spacing */
 }
