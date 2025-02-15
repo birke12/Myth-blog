@@ -9,6 +9,8 @@ const PageHeader = ({ title, subTitle, headerImg, headerType }) => {
           ? "homePageHeader"
           : headerType === "aboutUs"
           ? "aboutUsPageHeader"
+          : headerType === "greece"
+          ? "greecePageHeader"
           : "contactPageHeader"
       }
       /* style={{ backgroundImage: `url(${headerImg})` }} */
@@ -19,6 +21,8 @@ const PageHeader = ({ title, subTitle, headerImg, headerType }) => {
             ? styles.homeHeaderMainContainer
             : headerType === "aboutUs"
             ? styles.aboutHeaderMainContainer
+            : headerType === "greece"
+            ? styles.greeceHeaderMainContainer
             : styles.defaultHeaderMainContainer
         }`}
       >
@@ -34,6 +38,15 @@ const PageHeader = ({ title, subTitle, headerImg, headerType }) => {
         {headerType === "aboutUs" && (
           <>
             <div className={styles.aboutHeaderContainer}>
+              <h1 className={styles.title}>{title}</h1>
+
+              <h3 className={styles.subTitle}>{subTitle}</h3>
+            </div>
+          </>
+        )}
+        {headerType === "greece" && (
+          <>
+            <div className={styles.greeceHeaderContainer}>
               <h1 className={styles.title}>{title}</h1>
 
               <h3 className={styles.subTitle}>{subTitle}</h3>

@@ -1,6 +1,6 @@
 import styles from "./arcropolisArticle.module.css";
 
-const Acropolis = () => {
+const Acropolis = ({ articleText }) => {
 
   
   return (
@@ -15,6 +15,7 @@ const Acropolis = () => {
             alt="Acropolis"
             className={styles.image}
           />
+          {articleText}
           Welcome to the Acropolis, the iconic heart of ancient Athens and one
           of the most renowned archaeological sites in the world. The Acropolis
           stands as a testament to the grandeur and achievements of ancient

@@ -29,8 +29,8 @@ const Home = () => {
         {/* <ArticleSection jsonPath="/data/athenarticles.json" /> */}
         <ArticleSection
           jsonPath="/data/athenarticles.json"
-          text="In the midst of chaos, there is also opportunity."
-          author="Sun Tzu"
+         /*  text="In the midst of chaos, there is also opportunity."
+          author="Sun Tzu" */
         />
       </div>
       <div>

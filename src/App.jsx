@@ -5,6 +5,7 @@ import Navigation from "./components/navigation/Navigation";
 import AcropolisArticle from "./pages/acropolisArticle/AcropolisArticle.jsx";
 import AboutUs from "./pages/aboutUs/AboutUs.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import Greece from "./pages/greece/Greece.jsx";
 /* import Greece from "./pages/greece/Greece.jsx"; */
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     { path: "/", element: <Home /> },
     { path: "/acropolisArticle", element: <AcropolisArticle /> },
     { path: "/aboutUs", element: <AboutUs /> },
-    /* { path: "/greece", element: <Greece /> } */
+    { path: "/greece", element: <Greece /> }
   ]);
 
   return (
