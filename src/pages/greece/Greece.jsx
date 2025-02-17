@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./greece.module.css";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import Newsletter from "../../components/newsletter/Newsletter";
 
 const Greece = () => {
   const [articles, setArticles] = useState([]);
@@ -41,7 +42,7 @@ const Greece = () => {
 
       <section className={styles.articleGridContainer}>
         <div className={styles.articleGrid}>
-        <div className={styles.articleTitle}>Places to explore in Greece</div>
+          <div className={styles.articleTitle}>Places to explore in Greece</div>
           {articles.map((article) => (
             <div key={article.id} className={styles.articleCard}>
               <div className={styles.imageWrapper}>
@@ -61,6 +62,9 @@ const Greece = () => {
           ))}
         </div>
       </section>
+      <div>
+        <Newsletter />
+      </div>
     </article>
   );
 };

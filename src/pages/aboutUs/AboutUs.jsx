@@ -1,3 +1,4 @@
+import Newsletter from "../../components/newsletter/Newsletter";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
 const AboutUs = ({}) => {
@@ -10,8 +11,9 @@ return (
       /* headerImg={headerImg} */
     />
 
-    
- 
+    <div>
+      <Newsletter />
+    </div>
   </article>
 );
 }

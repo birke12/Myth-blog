@@ -1,3 +1,4 @@
+import Newsletter from "../../components/newsletter/Newsletter";
 import styles from "./arcropolisArticle.module.css";
 
 const Acropolis = ({ articleText }) => {
@@ -101,6 +102,9 @@ const Acropolis = ({ articleText }) => {
           of the ancient world. Every corner you turn, every stone you touch,
           holds a piece of history waiting to be discovered.
         </p>
+      </div>
+      <div>
+        <Newsletter />
       </div>
     </article>
   );

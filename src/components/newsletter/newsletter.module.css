@@ -6,6 +6,9 @@
   color: #fff;
   text-align: center;
 }
+.textHeader {
+  margin-bottom: 30px;
+}
 
 .form1 {
   padding: 20px;
@@ -20,6 +23,10 @@
   align-items: center;
   flex-direction: column;
 }
+.modalText {
+  margin: 10px;
+  margin-bottom: 20px;
+}
 
 .form1 label {
   font-size: 1rem;
@@ -31,21 +38,22 @@
 }
 
 .form1 input[type="email"] {
-  width: 76%; /* Ensure input spans the container */
+  width: 86%; /* Ensure input spans the container */
   padding: 10px;
   /* margin-bottom: 15px; */
   border: 1px solid #99a3ff;
   /*   border-radius: 4px; */
-  background-color: #fffaf0;
+  background-color: #ffffff;
   font-size: 1rem; /* Adjust font size for better readability */
+  margin: 4px
 }
 .form1 input[type="text"] {
-  width: 76%; /* Ensure input spans the container */
+  width: 86%; /* Ensure input spans the container */
   padding: 10px;
   margin-bottom: 5px;
   border: 1px solid #99a3ff;
   /*   border-radius: 4px; */
-  background-color: #fffaf0;
+  background-color: #ffffff;
   font-size: 1rem; /* Adjust font size for better readability */
 }
 
@@ -60,8 +68,16 @@
   box-shadow: 0 0 5px rgba(33, 31, 138, 0.4);
 }
 
+.newsText{
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  margin-bottom: 20px;
+  
+}
+
 .form1 button {
-  width: 80%; /* Make the button span the container */
+  width: 60%; /* Make the button span the container */
   padding: 10px;
   background-color: #373535;
   border: none;
@@ -70,21 +86,20 @@
   font-size: 1rem; /* Adjust font size */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+  
 }
 
 .textContainer {
-  width: 80%;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .textHeader {
   font-size: 30px;
 }
-.text {
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 15px;
-}
+
 
 .form1 button:hover {
   background-color: #121212;

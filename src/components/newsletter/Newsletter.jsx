@@ -55,7 +55,7 @@ const [isLoading, setIsLoading] = useState(false);
           <form onSubmit={handleSubmit} className={styles.form1}>
             <div className={styles.textContainer}>
               <h3 className={styles.textHeader}>Want to come along?</h3>
-              <div className={styles.text}>
+              <div className={styles.newsText}>
                 Sign up for our newsletter and get the latest articles with
                 inspiration and travel tips delivered straight to your inbox ♡"
               </div>
@@ -78,7 +78,7 @@ const [isLoading, setIsLoading] = useState(false);
               placeholder="Write your email here"
             />
 
-            <Button buttonText="Tilmeld" type="submit" />
+            <Button buttonText="Sign Up" type="submit" />
             {/* <button type="submit">Tilmeld</button> */}
           </form>
         </div>
@@ -86,7 +86,7 @@ const [isLoading, setIsLoading] = useState(false);
       {isModalOpen && (
         <Modal onClose={closeModal} className={styles.modal1}>
           <div>
-            <h2>Thank You for Signing Up!</h2>
+            <h2 className={styles.modalText}>Thank You for Signing Up!</h2>
             <p>
               We have sent you an email at {inputValue2}. Please check your
               inbox.
