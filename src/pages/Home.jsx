@@ -4,6 +4,7 @@ import Introduction from "../components/introduction/Introduction";
 import MarketingLinks from "../components/marketingLinks/MarketingLinks";
 import Newsletter from "../components/newsletter/Newsletter";
 import PageHeader from "../components/PageHeader/PageHeader";
+import SocialFollow from "../components/socialFollow/SocialFollow";
 
 
 
@@ -39,9 +40,10 @@ const Home = () => {
           author="Sun Tzu" */
         />
       </div>
-      <div>
+     {/*  <div>
         <Newsletter />
-      </div>
+      </div> */}
+      
     </article>
   );
 };

@@ -6,6 +6,10 @@ import AcropolisArticle from "./pages/acropolisArticle/AcropolisArticle.jsx";
 import AboutUs from "./pages/aboutUs/AboutUs.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Greece from "./pages/greece/Greece.jsx";
+import Contact from "./components/kontakt/Contact.jsx";
+import SocialFollow from "./components/socialFollow/SocialFollow.jsx";
+import Newsletter from "./components/newsletter/Newsletter.jsx";
+
 /* import Greece from "./pages/greece/Greece.jsx"; */
 
 function App() {
@@ -13,6 +17,7 @@ function App() {
     { path: "/", element: <Home /> },
     { path: "/acropolisArticle", element: <AcropolisArticle /> },
     { path: "/aboutUs", element: <AboutUs /> },
+    { path: "/contact", element: <Contact /> },
     { path: "/greece", element: <Greece /> }
   ]);
 
@@ -21,7 +26,8 @@ function App() {
       <div className="app">
         <Navigation />
         <div className="content">{routes}</div>
-
+        <Newsletter />
+        <SocialFollow />
         <Footer />
       </div>
     </>

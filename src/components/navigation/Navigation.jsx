@@ -20,11 +20,15 @@ const Navigation = () => {
   return (
     <nav className="navbar">
       <a href="/">
-        <img
+        {/*  <img
           className="logo1"
           src="/assets/logo/placeholdeLogo.png"
           alt="logo"
-        />
+        /> */}
+        <div className="logo-container">
+          <div className="ancient-logo">Ancient</div>
+          <div className="journeys-logo">Journeys</div>
+        </div>
       </a>
 
       <div className="burger-menu" onClick={toggleMenu}>
@@ -57,7 +61,7 @@ const Navigation = () => {
           <NavLink to="/aboutUs">About Us</NavLink>
         </li>
         <li>
-          <NavLink to="/">Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
 
         <div className="socialIconContainer">
