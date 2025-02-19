@@ -61,7 +61,9 @@ margin-top: 1px;
 }
 .socialIcon:hover {
   color: #ffe6b1;
-  padding-left: 10px;
+  margin-left: 10px;
+margin-top: 1px;
+ z-index: 999;
 }
 
 .socialIconContainer {
@@ -177,7 +179,7 @@ margin-top: 1px;
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 165%;
+  top: 195%;
   left: 0;
   background-color: #292424;
   list-style: none;

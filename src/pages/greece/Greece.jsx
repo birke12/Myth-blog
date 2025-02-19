@@ -62,9 +62,7 @@ const Greece = () => {
           ))}
         </div>
       </section>
-      <div>
-        <Newsletter />
-      </div>
+      
     </article>
   );
 };

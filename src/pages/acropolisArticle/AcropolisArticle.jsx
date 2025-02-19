@@ -103,9 +103,7 @@ const Acropolis = ({ articleText }) => {
           holds a piece of history waiting to be discovered.
         </p>
       </div>
-      <div>
-        <Newsletter />
-      </div>
+      
     </article>
   );
 };

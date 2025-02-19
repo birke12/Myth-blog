@@ -9,6 +9,8 @@ const PageHeader = ({ title, subTitle, headerImg, headerType }) => {
           ? "homePageHeader"
           : headerType === "aboutUs"
           ? "aboutUsPageHeader"
+          : headerType === "travelTips"
+          ? "traveltipsPageHeader"
           : headerType === "greece"
           ? "greecePageHeader"
           : "contactPageHeader"
@@ -21,12 +23,23 @@ const PageHeader = ({ title, subTitle, headerImg, headerType }) => {
             ? styles.homeHeaderMainContainer
             : headerType === "aboutUs"
             ? styles.aboutHeaderMainContainer
+            : headerType === "travelTips"
+            ? styles.travelHeaderMainContainer
             : headerType === "greece"
             ? styles.greeceHeaderMainContainer
             : styles.defaultHeaderMainContainer
         }`}
       >
         {headerType === "home" && (
+          <>
+            <div className={styles.headerContainer}>
+              <h1 className={styles.title}>{title}</h1>
+
+              <h3 className={styles.subTitle}>{subTitle}</h3>
+            </div>
+          </>
+        )}
+        {headerType === "travelTips" && (
           <>
             <div className={styles.headerContainer}>
               <h1 className={styles.title}>{title}</h1>

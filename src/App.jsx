@@ -9,6 +9,7 @@ import Greece from "./pages/greece/Greece.jsx";
 import Contact from "./components/kontakt/Contact.jsx";
 import SocialFollow from "./components/socialFollow/SocialFollow.jsx";
 import Newsletter from "./components/newsletter/Newsletter.jsx";
+import TravelTips from "./pages/travelTips/TravelTips.jsx";
 
 /* import Greece from "./pages/greece/Greece.jsx"; */
 
@@ -18,6 +19,7 @@ function App() {
     { path: "/acropolisArticle", element: <AcropolisArticle /> },
     { path: "/aboutUs", element: <AboutUs /> },
     { path: "/contact", element: <Contact /> },
+    { path: "/travelTips", element: <TravelTips /> },
     { path: "/greece", element: <Greece /> }
   ]);
 

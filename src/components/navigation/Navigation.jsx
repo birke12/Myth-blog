@@ -55,7 +55,7 @@ const Navigation = () => {
         </li>
 
         <li>
-          <NavLink to="/">Travel Tips</NavLink>
+          <NavLink to="/travelTips">Travel Tips</NavLink>
         </li>
         <li>
           <NavLink to="/aboutUs">About Us</NavLink>
